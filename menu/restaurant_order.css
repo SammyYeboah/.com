@@ -1,0 +1,141 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa;
+  color: #333;
+  font-size: 18px;
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.top {
+  margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+  color: #004d99;
+  margin-bottom: 1rem;
+}
+
+fieldset {
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.meal-title, .price-title {
+  display: inline-block;
+  width: 48%;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.price-title {
+  text-align: right;
+}
+
+article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.meal, .price {
+  width: 50%;
+  text-align: left;
+}
+
+.price {
+  text-align: right;
+}
+
+form section article {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+form section article label {
+  flex: 1;
+  text-align: left;
+}
+
+form section article input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+form section article input[type="number"] {
+  margin-left: 0;
+  margin-top: 10px;
+  max-width: 100px;
+  flex: 1;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form label, form input, form textarea, form button {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1rem;
+}
+
+form input, form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #004d99;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #003d80;
+}
+
+footer {
+  width: 100%;
+  background-color: #004d99;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: sticky;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .meal-title, .price-title, .meal, .price {
+      text-align: center;
+  }
+
+  article {
+      flex-direction: column;
+  }
+}
